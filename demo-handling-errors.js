@@ -7,7 +7,7 @@ async function doDemo() {
   await client.connect();
 
   try {
-    const result = await client.query("SELECT * from categories");
+    const result = await client.query("SELECT * from words");
     console.log(result.rows);
     console.log("no error occurred, results are above.");
   } catch (e) {
