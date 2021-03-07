@@ -4,7 +4,7 @@ These demos connect to local or remote databases and expect there to be tables t
 
 - Save a copy of the `.env.example` file as `.env`
 - Edit `.env` so that DATABASE_URL has the full connection string in it for whichever db you want to connect to.
-- If you haven't already, run the create-tables.sql script to create and populate database.
+- If you haven't already, execute the sql commands in the `create-tables.sql` script in your default database, to create and populate the necessary tables.
 
 # Run a demo
 
