@@ -3,10 +3,11 @@ const { Client } = require("pg");
 async function doDemo() {
   //Bad practice here!
   //Good practice would be to read this string from an environment variable
-  //NOT embed it in our code.
+  //NOT embed it in our code (particularly given it contains a password!)
 
   //However, this is the simplest way to see how a pg client can be configured with a connection string
 
+  //NOTE: the following connection string points at a fictitious database.
   const connectionString =
     "postgresql://dbuser:secretpassword@database.server.com:5432/mydb";
 

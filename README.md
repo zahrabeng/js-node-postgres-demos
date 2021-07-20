@@ -16,7 +16,9 @@ sudo -u postgres createdb demos
 
 - Then connect to the database (as academy) (e.g. with beekeeper studio) and run all of the sql in [create-tables.sql](./create-tables.sql). This will create and populate the tables required for the demo.
 
-# Setting up your connection
+# Setting up your connection string for heroku
+
+Some of the demos require a connection string to be specified in .env:
 
 - Save a copy of the `.env.example` file as `.env`
 - Edit `.env` so that DATABASE_URL has the full connection string in it for whichever db you want to connect to.
