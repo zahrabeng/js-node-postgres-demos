@@ -1,7 +1,7 @@
 const { Client } = require("pg");
 
 async function doDemo() {
-  const client = new Client(); //defaults to localhost
+  const client = new Client({ database: 'demos' });
   await client.connect();
 
   const text =

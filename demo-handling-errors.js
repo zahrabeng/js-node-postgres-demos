@@ -3,7 +3,7 @@ const { Client } = require("pg");
 //Try changing the SQL in this function to make a mistake and
 // see how the resulting error is handled.
 async function doDemo() {
-  const client = new Client();
+  const client = new Client({ database: 'demos' });
   await client.connect();
 
   try {

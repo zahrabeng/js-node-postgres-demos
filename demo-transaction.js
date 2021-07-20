@@ -7,7 +7,7 @@
 // or nothing at all.
 // Run this demo and check in your database that
 const { Pool } = require("pg");
-const pool = new Pool();
+const pool = new Pool({ database: 'demos' });
 async function doDemo() {
   // note: we don't try/catch this because if connecting throws an exception
   // we don't need to dispose of the client (it will be undefined)
@@ -52,4 +52,10 @@ async function doDemo() {
   }
 }
 
+console.log(
+  `This example is programmed to fail at a later one of many inserts.
+  The entire set of changes should be discarded by postgres 
+  i.e. you should afterwards find no category 'poets' in the categories table.
+  ============================================================================
+  `);
 doDemo().catch((e) => console.error(e.stack));
