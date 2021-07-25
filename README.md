@@ -42,3 +42,7 @@ For example, if you want to connect to the local demos db, your connection strin
 ```
 node demo-query-local-db.js
 ```
+
+# More on the demos
+
+more info can be found in [this page on notion](https://www.notion.so/weareacademy/About-the-node-postgres-demos-from-Academy-7e3d21aed384418981b8877ab586e994)
