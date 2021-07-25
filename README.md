@@ -16,10 +16,16 @@ sudo -u postgres createdb demos
 
 - Then connect to the database (as academy) (e.g. with beekeeper studio) and run all of the sql in [create-tables.sql](./create-tables.sql). This will create and populate the tables required for the demo.
 
-Alternatively, once you have created the empty database, you can run create-tables.sql from the terminal as follows:
+
+# Setting up the node project
+
+run 
+
 ```
-sudo -u postgres psql demos -f create-tables.sql
+yarn
 ```
+to install the dependencies specified in `package.json`
+
 
 # Setting up your connection string for heroku
 
