@@ -33,6 +33,9 @@ doDemo();
  * Returns the promise returned by client.query.
  * This promise will resolve to the results including
  * the inserted or updated row.
+ * 
+ * Note: you cannot mention a table-name on the left-hand side of the conflict action
+ * i.e. you cannot say DO UPDATE SET table_name.column_name = ... here.
  */
 function upsertScore(client, username, score) {
   return client.query(
