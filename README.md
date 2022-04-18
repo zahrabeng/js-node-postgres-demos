@@ -19,7 +19,7 @@ on mac:
 createdb demos
 ```
 
-- Then connect to the database with an SQL GUI client (e.g beekeeper studio) and run all of the sql in [create-tables.sql](./create-tables.sql). This will create and populate the tables required for the demo.
+- Then connect to the database with an SQL GUI client (e.g beekeeper studio) and run all of the sql in [create-tables.sql](./create-tables.sql). This will c reate and populate the tables required for the demo.
 
 
 # Setting up the node project
